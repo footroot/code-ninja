@@ -1,0 +1,6 @@
+ErrorDocument 401 "Unauthorized"
+ErrorDocument 403 "Forbidden"
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://mytaller.info/$1 [R,L]
